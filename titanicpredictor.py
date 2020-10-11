@@ -1,4 +1,3 @@
-import pandas as pd
 from sklearn.linear_model import LogisticRegression
 import pickle
 
@@ -6,6 +5,7 @@ class TitanicPredictor():
     def __init__(self, dataframe = None, fitmodel = False):
         
         if fitmodel:
+            # import pandas as pd
             df_len = self.df_f.shape[0]
             self.df_f = dataframe
             self.X_train, self.Y_train = [], []
